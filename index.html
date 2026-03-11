@@ -1,45 +1,114 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE HTML>
+<!--
+  Astral by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>wyrk.social</title>
+    <title>Wyrk LLC | DRIPn</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="html5up-astral/assets/css/main.css" />
     <style>
-      :root { --bg:#0b1220; --fg:#e6edf7; --accent:#34d399; }
-      * { box-sizing: border-box; }
       body {
+        background:
+          radial-gradient(circle at 18% 12%, rgba(253, 230, 138, 0.22), transparent 34%),
+          radial-gradient(circle at 82% 88%, rgba(217, 119, 6, 0.2), transparent 32%),
+          linear-gradient(145deg, #000000 0%, #0b0b0b 46%, #3a2600 100%) !important;
+      }
+
+      .intro .dripn-lockup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.45rem;
+        text-decoration: none;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .intro .dripn-icon {
+        width: clamp(120px, 18vw, 164px);
+        height: clamp(120px, 18vw, 164px);
+        border-radius: 26px;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        object-fit: cover;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+      }
+
+      .intro .dripn-wordmark {
         margin: 0;
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        background: radial-gradient(circle at 20% 20%, #17233d, var(--bg));
-        color: var(--fg);
-        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        color: #ffffff;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.75), 0 0 18px rgba(217, 119, 6, 0.35);
       }
-      .card {
-        width: min(92vw, 680px);
-        padding: 28px;
-        border: 1px solid #24314f;
-        border-radius: 14px;
-        background: rgba(8, 12, 22, 0.72);
-        backdrop-filter: blur(4px);
+
+      #home.panel.intro {
+        justify-content: center;
       }
-      h1 { margin: 0 0 10px; font-size: clamp(28px, 6vw, 46px); }
-      p { margin: 8px 0; line-height: 1.5; color: #b7c4da; }
-      .ok { color: var(--accent); font-weight: 700; }
-      code { background:#111a2c; padding:2px 6px; border-radius:6px; }
+
+      #home.panel.intro > * {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
     </style>
+    <noscript><link rel="stylesheet" href="html5up-astral/assets/css/noscript.css" /></noscript>
   </head>
-  <body>
-    <main class="card">
-      <h1>wyrk.social</h1>
-      <p class="ok">GitHub Pages is working.</p>
-      <p>If you see this at <code>https://wyrk.social</code>, DNS + TLS are correctly configured.</p>
-      <p id="ts"></p>
-    </main>
-    <script>
-      document.getElementById("ts").textContent =
-        "Build check: " + new Date().toISOString();
-    </script>
+  <body class="is-preload">
+    <div id="wrapper">
+      <nav id="nav">
+        <a href="#" class="icon solid fa-home"><span>Home</span></a>
+        <a href="#dripn" class="icon solid fa-mobile-alt"><span>DRIPn</span></a>
+      </nav>
+
+      <div id="main">
+        <article id="home" class="panel intro">
+          <header>
+            <h1>Wyrk LLC</h1>
+            <p>Creator-first technology company</p>
+          </header>
+          <a href="#dripn" class="dripn-lockup">
+            <img
+              src="html5up-astral/images/dripn-app-icon-180.png"
+              alt="DRIPn app icon"
+              class="dripn-icon"
+            />
+            <p class="dripn-wordmark">DRIPn</p>
+          </a>
+        </article>
+
+        <article id="dripn" class="panel">
+          <header>
+            <h2>DRIPn</h2>
+          </header>
+          <p>
+            DRIPn is Wyrk LLC's main social platform focused on expression, creator ownership, and direct
+            community connection. We're building DRIPn as a modern creator ecosystem where people can share content
+            in the moment, build audience relationships, and grow sustainable digital identity over time.
+          </p>
+          <p>
+            Right now, our work is centered on shaping the product experience, refining community tools, and
+            continuously improving the core platform for creators and supporters.
+          </p>
+        </article>
+      </div>
+
+      <div id="footer">
+        <ul class="copyright">
+          <li>&copy; Wyrk LLC.</li>
+          <li>Design base: <a href="https://html5up.net">HTML5 UP (Astral)</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="html5up-astral/assets/js/jquery.min.js"></script>
+    <script src="html5up-astral/assets/js/browser.min.js"></script>
+    <script src="html5up-astral/assets/js/breakpoints.min.js"></script>
+    <script src="html5up-astral/assets/js/util.js"></script>
+    <script src="html5up-astral/assets/js/main.js"></script>
   </body>
 </html>
